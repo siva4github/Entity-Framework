@@ -1,2 +1,7 @@
 Select DbSirstLibrary in Default Project in PM Console
 PM> scaffold-dbcontext 'Filename=./MyLocalLibrary.db' Microsoft.EntityFrameworkCore.SQLite
+
+By Using Proxies and UseLazyLoadingProxy() we can add lazy loading and all lazy loading properties should be virtual
+or
+in loop of entities _context.Entry(object).References(o=> o.Collection).Load()
+
