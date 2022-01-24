@@ -1,0 +1,2 @@
+Select DbSirstLibrary in Default Project in PM Console
+PM> scaffold-dbcontext 'Filename=./MyLocalLibrary.db' Microsoft.EntityFrameworkCore.SQLite

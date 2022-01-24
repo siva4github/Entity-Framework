@@ -1,14 +1,22 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using BookLibrary;
+//using BookLibrary;
+using DbFirstLibrary;
 using Microsoft.EntityFrameworkCore;
 
 Console.WriteLine("Hello, World!");
 
-var options = new DbContextOptionsBuilder<BooksContext>()
+//var options = new DbContextOptionsBuilder<BooksContext>()
+//       .UseSqlite("Filename=../../../MyLocalLibrary.db").Options;
+
+//using var db = new BooksContext(options);
+//db.Database.EnsureCreated();
+
+var options = new DbContextOptionsBuilder<MyLocalLibraryContext>()
        .UseSqlite("Filename=../../../MyLocalLibrary.db").Options;
 
-using var db = new BooksContext(options);
+using var db = new MyLocalLibraryContext(options);
 db.Database.EnsureCreated();
+
 
 //var authors = CreateFakeData();
 //await db.Authors.AddRangeAsync(authors);
