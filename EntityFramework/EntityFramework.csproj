@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BookLibrary\BookLibrary.csproj" />
     <ProjectReference Include="..\DbFirstLibrary\DbFirstLibrary.csproj" />
+    <ProjectReference Include="..\SchoolLibrary\SchoolLibrary.csproj" />
   </ItemGroup>
 
 </Project>
